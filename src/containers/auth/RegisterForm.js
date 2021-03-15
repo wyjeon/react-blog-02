@@ -61,7 +61,7 @@ function RegisterForm({ history }) {
     if (user) {
       history.push('/'); // 홈 화면으로 이동
     }
-  }, [user]);
+  }, [history, user]);
   return (
     <AuthForm
       type="register"
